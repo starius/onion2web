@@ -47,6 +47,12 @@ that you have understood:
 <input type="submit"
     value="I agree with the terms, let me access the content"/>
 </form>
+
+<a href="https://github.com/starius/onion2web">
+<img style="position: absolute; top: 0; right: 0; border: 0;"
+src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+alt="Fork me on GitHub"
+</a>
 ]]):format(host, onion, onion))
 end
 
