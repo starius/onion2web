@@ -40,7 +40,7 @@ that you have understood:
 <br/>
 <div>By the way, just to be clear:</div>
 <br/><br/>
-<center><b>THIS SERVER IS A PROXY AND IT’S NOT
+<center><b>THIS SERVER IS A PROXY AND IT'S NOT
     HOSTING THE TOR HIDDEN SERVICE SITE %s</b></center>
 <br/><br/>
 <form method="post" action="/confirm">
