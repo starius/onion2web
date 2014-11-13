@@ -69,7 +69,8 @@ onion2web.handle_onion2web = function(onion_replacement,
     end
     local cookies = ngx.req.get_headers()['Cookie']
     if confirmation and
-            not cookies:match('onion2web_confirmed=true') then
+            (not cookies or
+            not cookies:match('onion2web_confirmed=true')) then
         show_confirmation_form()
         return
     end
