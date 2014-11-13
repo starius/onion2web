@@ -10,8 +10,7 @@ local show_confirmation_form = function()
     local onion = host:match(hidden_base) .. '.onion'
     if ngx.req.get_method() == 'POST' and
             ngx.var.uri:match('^/confirm') then
-        ngx.req.set_header('Set-Cookie',
-            'onion2web_confirmed=true;')
+        ngx.header['Set-Cookie'] = 'onion2web_confirmed=true;'
         return ngx.redirect("/")
     end
     ngx.say(([[
