@@ -18,6 +18,10 @@ local show_confirmation_form = function()
 <title>Onion2web</title>
 <body>
 
+<h1>Onion2web</h1>
+
+<br/><br/>
+
 <b>%s does not host this content</b>;
 the service is simply a proxy connecting Internet users
 to content hosted inside the <a
