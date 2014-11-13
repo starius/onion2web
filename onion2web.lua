@@ -37,15 +37,17 @@ that you have understood:
     responsibility of it's editor.</li>
 </ul>
 <br/>
+
 <div>By the way, just to be clear:</div>
 <br/><br/>
 <center><b>THIS SERVER IS A PROXY AND IT'S NOT
-    HOSTING THE TOR HIDDEN SERVICE SITE %s</b></center>
+    HOSTING THE TOR HIDDEN SERVICE SITE %s</b>
 <br/><br/>
 <form method="post" action="/confirm">
 <input type="submit"
     value="I agree with the terms, let me access the content"/>
 </form>
+</center>
 
 <a href="https://github.com/starius/onion2web">
 <img style="position: absolute; top: 0; right: 0; border: 0;"
