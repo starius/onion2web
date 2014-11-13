@@ -13,7 +13,11 @@ local show_confirmation_form = function()
         ngx.header['Set-Cookie'] = 'onion2web_confirmed=true;'
         return ngx.redirect("/")
     end
-    ngx.say(([[
+    ngx.say(([[<html>
+<head>
+<title>Onion2web</title>
+<body>
+
 <b>%s does not host this content</b>;
 the service is simply a proxy connecting Internet users
 to content hosted inside the <a
@@ -54,6 +58,8 @@ that you have understood:
 src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
 alt="Fork me on GitHub"
 </a>
+</body>
+</html>
 ]]):format(host, onion, onion))
 end
 
