@@ -3,10 +3,12 @@ onion2web
 
 Access .onion sites without Tor Browser
 
-Homepage: http://onion.gq/
+[Homepage](http://onion.gq/).
 
 Dependency:
-[lua-resty-socks5](https://github.com/starius/lua-resty-socks5)
+[lua-resty-socks5](https://github.com/starius/lua-resty-socks5).
+
+[Paper](http://habrahabr.ru/post/243055/) (in Russian).
 
 This module contains the following functions:
 
