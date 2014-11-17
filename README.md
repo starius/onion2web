@@ -10,6 +10,16 @@ Dependency:
 
 [Paper](http://habrahabr.ru/post/243055/) (in Russian).
 
+Installation
+------------
+
+```bash
+$ sudo luarocks install onion2web
+```
+
+Reference
+---------
+
 This module contains the following functions:
 
  * `onion2web.handle_onion2web(onion_replacement,
