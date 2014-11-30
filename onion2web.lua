@@ -1,4 +1,5 @@
 local socks5 = require 'socks5'
+local ngx = require 'ngx'
 
 local onion2web = {}
 
