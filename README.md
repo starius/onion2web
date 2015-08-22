@@ -47,3 +47,16 @@ server {
     }
 }
 ```
+
+To blacklist some .onion sites:
+
+```nginx
+server {
+        listen   80;
+        server_name
+.badonion12345678.onion.gq
+.anotherbadonion1.onion.gq
+;
+        return 403;
+}
+```
