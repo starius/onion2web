@@ -78,7 +78,7 @@ onion2web.handle_onion2web = function(onion_replacement,
         torport = 9050
     end
     if not confirmation then
-        confirmation = true
+        confirmation = false
     end
     local repl = hidden_base .. onion_replacement
     local host = ngx.req.get_headers()['Host']
