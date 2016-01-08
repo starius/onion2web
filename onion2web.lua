@@ -82,7 +82,8 @@ onion2web.handle_onion2web = function(onion_replacement,
     end
     local repl = hidden_base .. onion_replacement
     local host = ngx.req.get_headers()['Host']
-    if not host:match('^' .. repl .. '$') then
+    if not host:match('^' .. repl .. '$') and
+            not host:match('%.' .. repl .. '$') then
         ngx.say('Bad domain: ' .. host)
         return
     end
