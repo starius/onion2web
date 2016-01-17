@@ -94,6 +94,7 @@ onion2web.handle_onion2web = function(onion_replacement,
         show_confirmation_form()
         return
     end
+    local change_only_html = true
     socks5.handle_request(torhost, torport,
     function(clheader)
         return clheader
@@ -105,7 +106,9 @@ onion2web.handle_onion2web = function(onion_replacement,
     function(soheader)
         return soheader
         :gsub(hidden_onion, "%1" .. onion_replacement)
-    end)
+    end,
+    change_only_html
+    )
 end
 
 return onion2web
