@@ -1,0 +1,21 @@
+error_log stderr notice;
+daemon off;
+
+events {
+    worker_connections 1024;
+}
+
+http {
+
+    server {
+        listen 16662;
+        server_name *.onion.gq;
+        location / {
+            default_type text/html;
+            content_by_lua '
+                require("onion2web").handle_onion2web(".onion.gq:16662");
+            ';
+        }
+    }
+
+}
