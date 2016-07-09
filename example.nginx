@@ -8,8 +8,9 @@ events {
 http {
 
     server {
-        listen 16662;
+        listen 16662 so_keepalive=10s:10s:8;
         server_name *.onion.gq;
+        lua_check_client_abort on;
         location / {
             default_type text/html;
             content_by_lua '
