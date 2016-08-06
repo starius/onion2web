@@ -2,8 +2,10 @@ error_log stderr notice;
 daemon off;
 
 events {
-    worker_connections 1024;
+    worker_connections 100000;
 }
+
+worker_rlimit_nofile 200000; # 2 * worker_connections
 
 http {
 
