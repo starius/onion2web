@@ -15,3 +15,5 @@ This machine does not host or contain any illegal content.
 Network infrastructure maintainers are
 not liable for the type of content that passes
 over their equipment.
+
+Donate: [166EpHWrLQqJXge4fjKJ3dyHSB6qLFGhMx](bitcoin:166EpHWrLQqJXge4fjKJ3dyHSB6qLFGhMx).
