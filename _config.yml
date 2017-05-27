@@ -1,0 +1,8 @@
+title: Onion2web
+description: Access .onion sites without Tor Browser
+google_analytics: 
+show_downloads: true
+theme: jekyll-theme-slate
+
+gems:
+  - jekyll-mentions
