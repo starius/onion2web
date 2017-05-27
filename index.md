@@ -9,7 +9,7 @@ Example: access onion search engine "not Evil"
 [hss3uro2hsxfogfq.onion.gq](http://hss3uro2hsxfogfq.onion.gq).
 
 Another example: listen Web Radio:
-http://76qugh5bey5gum7l.onion.gq
+[http://76qugh5bey5gum7l.onion.gq](http://76qugh5bey5gum7l.onion.gq).
 
 This machine does not host or contain any illegal content.
 Network infrastructure maintainers are
