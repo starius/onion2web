@@ -70,7 +70,7 @@ alt="Fork me on GitHub"
 end
 
 onion2web.handle_onion2web = function(onion_replacement,
-        torhost, torport, confirmation)
+        torhost, torport, confirmation, blocklist)
     if not torhost then
         torhost = '127.0.0.1'
     end
@@ -80,8 +80,16 @@ onion2web.handle_onion2web = function(onion_replacement,
     if confirmation == nil then
         confirmation = true
     end
-    local repl = hidden_base .. onion_replacement
     local host = ngx.req.get_headers()['Host']
+    -- Check against the blocklist.
+    local onion = host:match(hidden_base) .. '.onion'
+    local digest = ngx.md5(onion)
+    if blocklist and blocklist[digest] then
+        ngx.say('Domain ' .. host .. ' is blocked ' ..
+                'in the name of good and justice')
+        return
+    end
+    local repl = hidden_base .. onion_replacement
     if not host:match('^' .. repl .. '$') and
             not host:match('%.' .. repl .. '$') then
         ngx.say('Bad domain: ' .. host)
