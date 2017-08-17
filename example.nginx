@@ -61,6 +61,7 @@ http {
 	                for host_md5 in f:lines() do
 		            blocklist[host_md5] = true
 	                end
+                        f:close()
                     end
                 end
                 require("onion2web").handle_onion2web(".onion.gq",
