@@ -17,3 +17,5 @@ not liable for the type of content that passes
 over their equipment.
 
 Donate: [166EpHWrLQqJXge4fjKJ3dyHSB6qLFGhMx](bitcoin:166EpHWrLQqJXge4fjKJ3dyHSB6qLFGhMx).
+
+[Report the site](https://ahmia.fi/blacklist/)
