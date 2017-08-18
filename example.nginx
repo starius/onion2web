@@ -54,7 +54,18 @@ http {
         location / {
             default_type text/html;
             content_by_lua '
-                require("onion2web").handle_onion2web(".onion.gq");
+                if not blocklist then
+	            blocklist = {}
+                    local f = io.open("/etc/blocklist.txt")
+                    if f then
+	                for host_md5 in f:lines() do
+		            blocklist[host_md5] = true
+	                end
+                        f:close()
+                    end
+                end
+                require("onion2web").handle_onion2web(".onion.gq",
+                    nil, nil, true, blocklist);
             ';
         }
     }
